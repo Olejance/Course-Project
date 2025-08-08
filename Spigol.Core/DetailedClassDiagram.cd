@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="Customer &lt;- Order&#xD;&#xA;1 &lt;- 1">
+    <Position X="13.547" Y="8.927" Height="0.489" Width="1.325" />
+  </Comment>
+  <Comment CommentText="Order -&gt; Product&#xD;&#xA;1 -&gt; *">
+    <Position X="16.011" Y="9.287" Height="0.5" Width="1.21" />
+  </Comment>
+  <Comment CommentText="Cart -&gt; Product&#xD;&#xA;1 -&gt; *">
+    <Position X="19.588" Y="9.866" Height="0.5" Width="1.21" />
+  </Comment>
+  <Class Name="Spigol.Core.Domain.User">
+    <Position X="10.75" Y="7" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAEAACAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spigol.Core.Domain.Customer">
+    <Position X="12.5" Y="10" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>ACEAAAEAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Domain\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spigol.Core.Domain.Admin">
+    <Position X="8.25" Y="10.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spigol.Core.Domain.Product">
+    <Position X="16.75" Y="10.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAgAAAAAAIAAAQAAAAAAAACAAABAAAACAA=</HashCode>
+      <FileName>Domain\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spigol.Core.Domain.Order">
+    <Position X="15" Y="6" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAEAAAAAAAAACAAQACAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Domain\Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer1" />
+      <Property Name="Product" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Spigol.Core.Domain.Cart">
+    <Position X="18.5" Y="7.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAACBAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAAAABAAAQ=</HashCode>
+      <FileName>Domain\Cart.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Product" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Spigol.Core.Services.OrderService">
+    <Position X="15" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\OrderService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Spigol.Core.Services.ProductService">
+    <Position X="11.25" Y="3.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAABAAAAAAABAAAAAAAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Services\ProductService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Spigol.Core.Services.UserService">
+    <Position X="7.25" Y="3.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Services\UserService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Spigol.Core.Data.AppDbContext">
+    <Position X="4.5" Y="7.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAEAACAAAAAAAAAAAAAACQAAEAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Data\AppDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spigol.Core.Services.JsonDataSerializerService">
+    <Position X="19" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\JsonDataSerializerService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Spigol.Core.Interfaces.IUserService">
+    <Position X="7.5" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Interfaces\IUserService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Spigol.Core.Interfaces.IOrderService">
+    <Position X="15.25" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IOrderService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Spigol.Core.Interfaces.IProductService">
+    <Position X="11.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Interfaces\IProductService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Spigol.Core.Interfaces.IDataSerializerService">
+    <Position X="19" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDataSerializerService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
