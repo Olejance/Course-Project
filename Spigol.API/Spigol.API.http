@@ -1,0 +1,6 @@
+@Spigol.API_HostAddress = http://localhost:5069
+
+GET {{Spigol.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

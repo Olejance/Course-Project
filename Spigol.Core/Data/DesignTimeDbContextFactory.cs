@@ -9,14 +9,11 @@ namespace Spigol.Core.Data
     {
         public AppDbContext CreateDbContext(string[] args)
         {
-            // Створюємо налаштування для нашої бази даних
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
 
-            // Вказуємо, що будемо використовувати SQLite і задаємо ім'я файлу бази даних
-            // Цей рядок підключення буде використовуватися ТІЛЬКИ для створення міграцій
-            optionsBuilder.UseSqlite("Data Source=design_time.db");
+            // ВАЖЛИВО: використовуємо ТОЧНО ТАКИЙ САМИЙ абсолютний шлях
+            optionsBuilder.UseSqlite("Data Source=D:\\SigmaFolder\\University\\2ndYear\\2nd semester\\ООП курсовий\\SpijoniroGolubiroMarketplace\\SpijoniroGolubiroMarketplace\\marketplace.db");
 
-            // Створюємо і повертаємо екземпляр нашого AppDbContext
             return new AppDbContext(optionsBuilder.Options);
         }
     }
