@@ -11,7 +11,6 @@ namespace Spigol.Core.Data
         {
             var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
 
-            // ВАЖЛИВО: використовуємо ТОЧНО ТАКИЙ САМИЙ абсолютний шлях
             optionsBuilder.UseSqlite("Data Source=D:\\SigmaFolder\\University\\2ndYear\\2nd semester\\ООП курсовий\\SpijoniroGolubiroMarketplace\\SpijoniroGolubiroMarketplace\\marketplace.db");
 
             return new AppDbContext(optionsBuilder.Options);
